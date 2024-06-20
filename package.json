@@ -21,6 +21,7 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "astro": "^4.10.3",
+    "clsx": "^2.1.1",
     "framer-motion": "^11.2.11",
     "jose": "^5.4.1",
     "react": "^18.3.1",
