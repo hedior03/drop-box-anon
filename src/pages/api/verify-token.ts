@@ -17,7 +17,6 @@ export const POST: APIRoute = async ({ request }) => {
 
   try {
     const { payload } = await jwtVerify(token, encodedSecret);
-    console.log(payload);
 
     return new Response(JSON.stringify({ payload }), { status: 200 });
   } catch (error: any) {
