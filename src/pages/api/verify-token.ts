@@ -2,9 +2,8 @@ import type { APIRoute } from "astro";
 import { jwtVerify } from "jose";
 import environmentVars from "../../environmentVars";
 
-export const GET: APIRoute = async ({ request }) => {
-  const url = new URL(request.url);
-  const token = url.searchParams.get("token");
+export const POST: APIRoute = async ({ request }) => {
+  const { token } = (await request.json()) as any;
 
   if (!token) {
     return new Response(JSON.stringify({ error: "Token is missing" }), {
