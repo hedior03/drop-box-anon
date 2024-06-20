@@ -15,7 +15,9 @@
     "@astrojs/check": "^0.7.0",
     "@astrojs/cloudflare": "^10.4.1",
     "astro": "^4.10.3",
-    "typescript": "^5.4.5"
+    "jose": "^5.4.1",
+    "typescript": "^5.4.5",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20240614.0",
